@@ -189,8 +189,20 @@ body {
 
 .athlets img {
   position: absolute;
-  top: 20px;
-  left: 50px;
+  top: -71px;
+  left: 128px;
+}
+
+.athlets::before {
+  content: '';
+  position: absolute;
+  top: 396px;
+  left: 146px;
+  height: 6px;
+  width: 860px;
+  
+  background-color: #9172e6;
+  transform: rotate(-49deg);
 }
 
 .athlets h2,
@@ -199,7 +211,7 @@ body {
   padding-right: 25px;
 }
 
-.athlets .subsection:first-child {
+.athlets .subsection:first-of-type {
   min-height: 404px;
   border-top: 1px solid #fff;
   background-color: #fff;
@@ -263,23 +275,31 @@ body {
   line-height: 28px;
 }
 
-.athlets .subsection:nth-child(2) {
+.athlets .subsection:nth-of-type(2) {
   min-height: 255px;
   background-color: #f6f4fb;
   border-top: 1px solid #f6f4fb;
 }
 
-.athlets .subsection:nth-child(2) .features {
+.athlets .subsection:nth-of-type(2) .features {
   margin-top: 64px;
 }
 
-.athlets .subsection:last-child {
-  min-height: 297px;
+.athlets .subsection:last-of-type {
+  min-height: 296px;
   background-color: #5e42b0;
   border-top: 1px solid #5e42b0;
 }
 
-.athlets .subsection:last-child .features {
+.athlets .subsection:last-of-type .features {
   margin-top: 91px;
+}
+
+.athlets .subsection:last-of-type .features-desc {
+  color: #fff;
+}
+
+.athlets .subsection:last-of-type span::after {
+  background-color: #efefef;
 }
 
