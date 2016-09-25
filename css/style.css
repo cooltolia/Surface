@@ -17,6 +17,7 @@ body {
 
 
 .wrapper {
+  position: relative;
   width: 1903px;
   background-color: #0a0e34;
   margin: 0 auto;
@@ -183,9 +184,7 @@ body {
   box-shadow: inset 0px 3px 5px #0a0e34
 }
 
-.athlets {
-  position: relative;
-}
+/*MAIN*/
 
 .athlets img {
   position: absolute;
@@ -205,28 +204,56 @@ body {
   transform: rotate(-49deg);
 }
 
+.athlets .decor {
+  position: absolute;
+  top: 149px;
+  left: 392px;
+}
+
+.decor .plus {
+  position: absolute;
+  width: 17px;
+  height: 3px;
+  background-color: #9173e6;
+}
+
+.decor .plus:before {
+  content: '';
+  position: absolute;
+  width: 17px;
+  height: 3px;
+  background-color: #9173e6;
+  transform: rotate(90deg);
+}
+
+.athlets .plus:first-child {
+  left: 22px;
+  top: 20px;
+}
+
+.athlets .plus:last-child {
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
 .athlets h2,
 .athlets .features {
   padding-left: 808px;
   padding-right: 25px;
 }
 
-.athlets .subsection:first-of-type {
-  min-height: 404px;
-  border-top: 1px solid #fff;
-  background-color: #fff;
-
-}
-
-.athlets .subsection h2 {
-  margin-top: 112px;
-  margin-bottom: 94px;
-  
+.subsection h2 {
   color: #e7e7e7;
   font-size: 90px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 60px;
+}
+
+.athlets .subsection h2 {
+  margin-top: 112px;
+  margin-bottom: 94px;
 }
 
 .features-title {
@@ -275,6 +302,12 @@ body {
   line-height: 28px;
 }
 
+.athlets .subsection:first-of-type {
+  min-height: 404px;
+  border-top: 1px solid #fff;
+  background-color: #fff;
+}
+
 .athlets .subsection:nth-of-type(2) {
   min-height: 255px;
   background-color: #f6f4fb;
@@ -285,21 +318,71 @@ body {
   margin-top: 64px;
 }
 
-.athlets .subsection:last-of-type {
+.athlets .subsection:nth-of-type(3) {
   min-height: 296px;
   background-color: #5e42b0;
   border-top: 1px solid #5e42b0;
 }
 
-.athlets .subsection:last-of-type .features {
+.athlets .subsection:nth-of-type(3) .features {
   margin-top: 91px;
 }
 
-.athlets .subsection:last-of-type .features-desc {
+.athlets .subsection:nth-of-type(3) .features-desc {
   color: #fff;
 }
 
-.athlets .subsection:last-of-type span::after {
+.athlets .subsection:nth-of-type(3) span::after {
   background-color: #efefef;
 }
 
+.players h2,
+.players .features {
+  width: 489px;
+  padding-left: 132px;
+}
+
+.players img {
+  position: absolute;
+  top: -116px;
+  right: -52px;
+}
+
+.players .subsection:first-of-type {
+  min-height: 442px;
+  border-top: 1px solid #fff;
+  background-color: #fff;
+}
+
+.players h2 {
+  margin-top: 114px;
+  margin-bottom: 90px;
+}
+
+.players .subsection:nth-of-type(2) {
+  min-height: 246px;
+  border-top: 1px solid #f6f4fb;
+  background-color: #f6f4fb;
+}
+
+.players .subsection:nth-of-type(2) .features {
+  margin-top: 64px;
+}
+
+.players .subsection:nth-of-type(3) {
+  min-height: 267px;
+  border-top: 1px solid #0a0e34;
+  background-color: #0a0e34;
+}
+
+.players .subsection:nth-of-type(3) .features {
+  margin-top: 94px;
+}
+
+.players .subsection:nth-of-type(3) .features-desc {
+  color: #fff;
+}
+
+.players .subsection:nth-of-type(3) span::after {
+  background-color: #efefef;
+}
