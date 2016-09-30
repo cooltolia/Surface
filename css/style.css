@@ -18,12 +18,14 @@ body {
 
 .wrapper {
   position: relative;
+/*  width: 100%;*/
   width: 1903px;
+  max-width: 1920px;
   background-color: #0a0e34;
   margin: 0 auto;
 }
 
-.main-header.wrapper::after {
+.main-header::after {
   content: '';
   background-image: url(../img/football.jpg);
   background-size: 1920px 1082px;
@@ -48,7 +50,7 @@ body {
 }
 
 .main-header .container {
-  height: 960px;
+  min-height: 960px;
 }
 
 .logo {
@@ -243,7 +245,9 @@ body {
   padding-right: 25px;
 }
 
-.subsection h2 {
+.wrapper h2 {
+  margin: 0;
+  
   color: #e7e7e7;
   font-size: 90px;
   font-weight: 700;
@@ -385,4 +389,141 @@ body {
 
 .players .subsection:nth-of-type(3) span::after {
   background-color: #efefef;
+}
+
+.do-it {
+  display: flex;
+  flex-flow: row wrap;
+/*
+  max-width: 1920px;
+  min-width: 1280px;
+*/
+}
+
+.do-it .b__flex {
+  position: relative;
+  flex: 1 1 45%;
+}
+
+.do-it img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.be-active,
+.find-contact,
+.work-it {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 127px;
+  
+  background-color: #fff;
+}
+
+.find-contact {
+  padding-left: 192px;
+}
+
+.be-active::after,
+.find-contact::after,
+.work-it::after {
+  content: '';
+  position: relative;
+  display: block;
+  bottom: 0; left: 0;
+  width: 22px;
+  height: 5px;
+  background-color: #5e42b0;
+  border-radius: 2px;
+}
+
+ .do-it .number{
+  position: absolute;
+  box-sizing: border-box;
+  width: 168px;
+  height: 155px;
+  padding-top: 54px;
+  top: 211px; left: -84px;
+  
+  background-color: #5e42b0;
+  color: #f5f6f7;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+}
+
+.number span {
+  display: inline-block;
+  position: relative;
+}
+
+.number span::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 5px;
+  opacity: 0.3;
+  bottom: -9px; left: 0;
+  background-color: #fff;
+  border-radius: 1px;
+}
+
+.be-active h2 {
+  margin-top: 254px;
+  padding-bottom: 116px;
+}
+
+.find-contact h2 {
+  margin-top: 254px;
+  padding-bottom: 74px;
+}
+
+.work-it h2 {
+  margin-top: 254px;
+  padding-bottom: 108px;
+}
+
+.do-it .description {
+  position: relative;
+  margin: 0;
+  
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.be-active .description {
+  width: 330px;
+  margin-bottom: 84px;
+}
+
+.find-contact .description {
+  width: 350px;
+  margin-bottom: 116px;
+}
+
+.work-it .description {
+  width: 510px;
+  margin-bottom: 89px;
+}
+
+/*FOOTER*/
+
+.main-footer {
+  min-height: 959px;
+  position: relative;
+}
+
+.main-footer::after {
+  content: '';
+  position: absolute;
+  min-width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  background-image: url(../img/footer-image.jpg);
+  background-size: cover;
+  opacity: 0.1;
 }
